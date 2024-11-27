@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #cdcafc;
+    color: #ffffff;
+}
+
+.navbar:hover{
+    color: rgb(46, 15, 146);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .icons {
+    display: flex;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #cdcafc;
+}
+
+.navbar .icons img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+    background-color: #e9f4f8;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.8s ease;
+}
+
+.card:hover img {
+    transform: scale(1.1); 
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+}
+
+.hover-text {
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.hover-text:hover {
+    color: rgb(74, 165, 100);
+}
+
+a {
+    text-decoration: none; 
+    color: rgb(3, 3, 14); 
+    transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}
